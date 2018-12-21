@@ -235,7 +235,7 @@
       
       if (validateForm()) {
         
-        var userData = {
+        var friendsData = {
           name: $("#name").val(),
           photo: $("#photo").val(),
           scores: [
@@ -253,7 +253,7 @@
         };
 
         
-        $.post("/api/friends", userData, function(data) {
+        $.post("/api/friends", friendsData, function(data) {
 
           
           $("#match-name").text(data.name);
